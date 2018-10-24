@@ -7,10 +7,11 @@ import { MatMenuModule } from '@angular/material/menu';
   styleUrls: ['./app.component.css']
 })
 export class AppComponent {
-  title = 'Moodplay';
-  selectionVariable = 'play';
+  // title = 'Moodplay';
+  // selectionVariable = 'play';
+  // hideMenu: boolean = true;
 
-  onSelected(text: string) {
-    this.selectionVariable = text;
-  }
+  // onSelected(text: string) {
+  //   this.selectionVariable = text;
+  // }
 }

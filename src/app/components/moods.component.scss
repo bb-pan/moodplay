@@ -1,0 +1,85 @@
+$bgcolor1: #3C326F;
+$bgcolor2: #F97472;
+
+/* general definision */
+section {
+  width: 100vw;
+  height: 100vh;
+  background: green;
+  opacity: 0.87;
+  background-image: linear-gradient(60deg, $bgcolor1, $bgcolor2);
+}
+
+svg {
+  position: absolute;
+  top: 20px;
+  right: 20px;
+}
+/* Home section */
+section.home {
+  width: calc(100vw - 30px);
+  height: calc(100vh - 30px);
+  border: 15px solid #fff;
+  overflow: auto;
+  
+
+  h1 {
+    text-align: center;
+    color: #fff;
+    margin-top: 130px;
+  }
+
+  div.intro {
+    color: #fff;
+    width: 70%;
+    font-size: 20px;
+    line-height: 33px;
+    text-align: center;
+    margin: 1rem auto;
+  }
+
+  label {
+    display: block;
+    text-align: center;
+    font-size: 22px;
+    color: #fff;
+    margin: 2rem
+  }
+  .home__center {
+    text-align: center;
+    margin: 2rem;
+  }
+  input {
+    background: none;
+    border: none;
+    border-bottom: 3px solid white;
+    font-size: 22px;
+    margin: auto;
+    outline: none;
+    color: #fff;
+  }
+  .mat-chip-list {
+    outline: none;
+  }
+  .mat-chip {
+    font-size: 22px;
+    margin: 5rem auto;
+    width: 200px;
+    position: relative;
+    padding: 1rem;
+    img {
+      position: absolute;
+      right: 10px;
+    }
+  }
+}
+
+
+
+@media screen and (max-width: 480px) {
+  .home {
+    div.intro {
+      width: 90%;
+    }
+  }
+}

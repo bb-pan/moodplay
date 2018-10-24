@@ -2,7 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule } from '@angular/core';
 import { FormsModule } from '@angular/forms';
 import { HttpModule, JsonpModule } from '@angular/http';
-import { MatSidenavModule, MatIconModule, MatButtonModule } from '@angular/material';
+import { MatSidenavModule, MatIconModule, MatButtonModule, MatChipsModule } from '@angular/material';
 import { BrowserAnimationsModule }  from '@angular/platform-browser/animations';
 import { OverlayModule }            from '@angular/cdk/overlay';
 import { PortalModule }             from '@angular/cdk/portal';
@@ -15,11 +15,14 @@ import { PlayerService } from './services/player.service';
 import { FeatureService } from './services/feature.service';
 import { GraphicsComponent } from './components/graphics.component';
 
+import { MoodsComponent } from './components/moods.component';
+
 @NgModule({
   declarations: [
     AppComponent,
     Menu,
-    GraphicsComponent
+    GraphicsComponent,
+    MoodsComponent
   ],
   imports: [
     BrowserModule,
@@ -29,6 +32,7 @@ import { GraphicsComponent } from './components/graphics.component';
     MatSidenavModule,
     MatIconModule,
     MatButtonModule,
+    MatChipsModule,
     BrowserAnimationsModule,
     OverlayModule,
     PortalModule

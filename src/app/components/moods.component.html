@@ -1,0 +1,32 @@
+<section [class.home]='isHome'>
+
+  <div class="home" *ngIf="isHome">
+    <h1>MOODPLAY</h1>
+    <div class='intro wsans'>Hello, welcome to MoodPlay, lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam.</div>
+
+<!-- 
+    <mat-form-field>
+      <input matInput placeholder="Input">
+    </mat-form-field> -->
+    <label class="wsans" for="user_name">What's your name?</label>
+    <div class="home__center">
+      <input type="text" id="user_name" [(ngModel)]="inputs.home">
+    </div>
+    <div class="home__center">
+      <mat-chip-list class="mat-chip-list-stacked">
+        <mat-chip [attr.disabled]="inputs.home.length != 0" (click)="handleClick($event)">
+          Join the party
+          <img src='./assets/icon-dance.svg' *ngIf='inputs.home.length != 0'  [attr.title]='inputs.home.length != 3 ? "tre": "ne treee"'>
+        </mat-chip>
+      </mat-chip-list>
+
+    </div>
+
+  </div>
+
+
+  <div class="moods" *ngIf="!isHome">
+    moods Page
+  </div>
+
+</section>
