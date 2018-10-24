@@ -14,7 +14,7 @@
     </div>
     <div class="home__center">
       <mat-chip-list class="mat-chip-list-stacked">
-        <mat-chip [attr.disabled]="inputs.home.length != 0" (click)="handleClick($event)">
+        <mat-chip [disabled]="inputs.home.length == 0" (click)="handleClick($event)">
           Join the party
           <img src='./assets/icon-dance.svg' *ngIf='inputs.home.length != 0'  [attr.title]='inputs.home.length != 3 ? "tre": "ne treee"'>
         </mat-chip>
